@@ -1,7 +1,7 @@
 /* Variables CSS para temas claro y oscuro */
 :root {
-    --bg-gradient-start: #667eea;
-    --bg-gradient-end: #764ba2;
+    --bg-gradient-start: #4facfe;
+    --bg-gradient-end: #00f2fe;
     --card-bg: #ffffff;
     --text-primary: #333333;
     --text-secondary: #666666;
@@ -37,11 +37,13 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, var(--bg-gradient-start) 0%, var(--bg-gradient-end) 100%);
+    background-size: 200% 200%;
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: background 0.5s ease;
+    animation: gradient-shift 8s ease infinite;
 }
 
 .profile-card {
@@ -131,4 +133,11 @@ body {
 .theme-toggle:hover {
     transform: scale(1.05);
     opacity: 0.9;
+}
+
+/* Animación de gradiente */
+@keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
