@@ -1,8 +1,8 @@
 /* Variables CSS para temas claro y oscuro */
 :root {
-    --bg-gradient-start: #4facfe;
-    --bg-gradient-end: #00f2fe;
-    --card-bg: #ffffff;
+    --bg-gradient-start: #43e97b;
+    --bg-gradient-end: #38f9d7;
+    --card-bg: #f0f0f3;
     --text-primary: #333333;
     --text-secondary: #666666;
     --accent-color: #667eea;
@@ -48,9 +48,9 @@ body {
 
 .profile-card {
     background: var(--card-bg);
-    border-radius: 20px;
+    border-radius: 50px;
     padding: 40px;
-    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    box-shadow: 20px 20px 60px #d1d1d1, -20px -20px 60px #ffffff;
     text-align: center;
     max-width: 350px;
     width: 90%;
@@ -58,7 +58,7 @@ body {
 }
 
 .profile-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-5px);
 }
 
 .profile-img {
